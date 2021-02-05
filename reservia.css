@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    flex-wrap: nowrap
+}
+
+#about{
+    margin-right:16%
+}
+
+#our_stays{
+    margin-right: 16%;
+}
+
+#section{
+    display: flex
+}
