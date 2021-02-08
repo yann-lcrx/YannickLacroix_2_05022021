@@ -1,16 +1,65 @@
+p{
+    text-align: center;
+}
+
+#activities, #search, footer, section, header{
+    width: 90%;
+    margin-bottom: 15px;
+}
+
 footer{
+    height: 200px;
+    background-color:forestgreen
+}
+
+header{
+    height: 100px;
+    background-color:red;
     display: flex;
-    flex-wrap: nowrap
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#about{
-    margin-right:16%
+#search{
+    height: 200px;
+    background-color: purple
 }
 
-#our_stays{
-    margin-right: 16%;
+#stays{
+    height: 400px;
 }
 
-#section{
-    display: flex
+#latest{
+    height: 400px;
+    background-color: orangered;
+    flex:60%;
+    margin-right: 10px;
+}
+
+#activities{
+    height: 400px;
+    background-color: darkgoldenrod;
+}
+
+#stays{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+aside{
+    height: 400px;
+    background-color: palevioletred;
+    flex:40%
+}
+
+nav{
+    height: 80px;
+    width: 40%;
+    background-color: brown;
+}
+
+@media all and (max-width: 1024px){
+    header, #stays{
+        flex-direction: column;
+    }
 }
