@@ -1,8 +1,4 @@
-p{
-    text-align: center;
-}
-
-#activities, #search, footer, section, header{
+#activities, #search, footer, section, #stays, header{
     width: 90%;
     margin-bottom: 14px;
 }
@@ -58,8 +54,27 @@ nav{
     background-color: brown;
 }
 
+nav ul{
+    display:flex;
+    flex-wrap: nowrap; 
+    list-style-type: none;
+}
+
+nav li{
+    padding: 10px 10px 10px 10px;
+    margin-right:15px
+}
+
 @media all and (max-width: 1024px){
     header, #stays{
         flex-direction: column;
     }
+}
+
+#stays img{
+    max-width: 150px;
+}
+
+#activities img{
+    max-width: 225px;
 }
