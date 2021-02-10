@@ -9,7 +9,7 @@ footer{
 }
 
 header{
-    height: 100px;
+    height: 75px;
     background-color:red;
     display: flex;
     flex-direction: row;
@@ -22,14 +22,17 @@ header{
 }
 
 #stays{
-    height: 400px;
+    height: 525px;
 }
 
 #latest{
-    height: 400px;
     background-color: orangered;
-    flex:60%;
-    margin-right: 10px;
+    max-width:65%;
+    margin-right: 25px;
+}
+
+#latest img{
+    border-radius: 6px 6px 0px 0px;
 }
 
 #activities{
@@ -43,7 +46,6 @@ header{
 }
 
 aside{
-    height: 400px;
     background-color: palevioletred;
     flex:40%
 }
@@ -58,6 +60,7 @@ nav ul{
     display:flex;
     flex-wrap: nowrap; 
     list-style-type: none;
+    justify-content: flex-start;
 }
 
 nav li{
@@ -72,9 +75,37 @@ nav li{
 }
 
 #stays img{
-    max-width: 150px;
+    width: 175px;
+    height: 125px;
 }
 
 #activities img{
-    max-width: 225px;
+    max-width: 250px;
+}
+
+nav li:hover{
+    border-top: 2px solid #0065FC;
+}
+
+#stays-marseille{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    justify-content: space-around;
+}
+
+#stays-marseille div{
+border-radius: 6px;
+box-shadow: 3px 3px 6px grey;
+}
+
+h4{
+margin-bottom: 0px;
+}
+
+aside{
+    display: flex;
+    flex-wrap:nowrap;
+    border-radius: 6px;
+    justify-content: space-around
 }
