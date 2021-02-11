@@ -5,7 +5,13 @@
 
 footer{
     min-height: 200px;
-    background-color:forestgreen
+    background-color:forestgreen;
+    display: flex;
+    justify-content: flex-start
+}
+
+footer div{
+    flex: 33%
 }
 
 header{
@@ -40,7 +46,7 @@ aside img{
 }
 
 #activities{
-    height: 400px;
+    min-height: 400px;
     background-color: darkgoldenrod;
 }
 
@@ -60,10 +66,13 @@ nav{
     background-color: brown;
 }
 
+ul{
+list-style-type: none;
+}
+
 nav ul{
     display:flex;
-    flex-wrap: nowrap; 
-    list-style-type: none;
+    flex-wrap: nowrap;
     justify-content: flex-end;
 }
 
@@ -77,9 +86,17 @@ nav li{
         flex-direction: column;
     }
 
-#latest, aside{
-    flex: 100%
-}
+    #latest, aside, #footer div{
+        flex: 100%
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #nav li{
+        flex: 100%;
+    }
 }
 
 #stays-marseille img{
@@ -94,7 +111,7 @@ nav li{
 }
 
 #activities img{
-    max-width: 250px;
+    width: 300px;
 }
 
 nav li:hover{
@@ -115,15 +132,17 @@ nav li:hover{
     justify-content: space-around;
 }
 
+#stays-marseille div, #popular-marseille div, #activities-marseille div{
+    box-shadow: 3px 3px 6px grey;
+}
+
 #stays-marseille div{
     border-radius: 6px;
-    box-shadow: 3px 3px 6px grey;
     max-width: 300px;
 }
 
 #popular-marseille div{
     border-radius: 6px;
-    box-shadow: 3px 3px 6px grey;
     max-width: 300px;
     margin-bottom: 15px;
     display: flex;
@@ -139,12 +158,12 @@ nav li:hover{
     margin-bottom: 15px;
 }
 
-#stays-marseille div:nth-child(4),#stays-marseille div:nth-child(5),#stays-marseille div:nth-child(6){
-    align-content: flex-end;
-}
-
 #activities-marseille{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#activities-marseille div:nth-child(1), #activities-marseille div:nth-child(4),{
+    flex: 100%
 }
