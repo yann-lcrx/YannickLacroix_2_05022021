@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang=fr>
-    <meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://kit.fontawesome.com/8a320ab812.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="reservia.css">
         <title>Réservez vos vacances avec Reservia</title>
-
+    </head>
+    
     <body>
         <header>
             <p><img src='images/logo/Reservia.svg' alt='logo reservia'></p>
@@ -11,7 +14,7 @@
                 <ul>
                     <li><a href=#stays>Hébergements</a></li>
                     <li><a href=#activities>Activités</a></li>
-                    <li><a href=#><strong>S'inscrire</strong></a></li>
+                    <li><a href=#></a>S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
@@ -21,18 +24,18 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <form method="post" action="traitement.php">
-                <p><input type="text" name="recherche" /> <button href=#>Rechercher</button></p> 
-            </form> 
+                <p><i class="fas fa-map-marker-alt"></i><input type="text" name="recherche" /> <button href=#>Rechercher</button></p> 
+            </form>
 
             <h3>Filtres</h3>
                 <ul id="filters">
-                    <li>Economique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
+                    <li><i class="fas fa-money-bill-wave"></i>Economique</li>
+                    <li><i class="fas fa-child"></i>Familial</li>
+                    <li><i class="fas fa-heart"></i>Romantique</li>
+                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
                 </ul>
 
-            <p>??? Plus de 500 hébergements sont disponibles dans cette ville</p>
+            <p><i id="information" class="fas fa-info"></i> Plus de 500 hébergements sont disponibles dans cette ville</p>
         </section>
 
         <section id='stays'>
@@ -77,7 +80,7 @@
                         <!--*****-->
                     </a></div>
                 </div>
-                <h4>Afficher plus</h4>
+                <h4><a href=#>Afficher plus</a></h4>
             </section>
 
             <aside id='mostpopular'>
