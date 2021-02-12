@@ -68,20 +68,12 @@ nav li{
 }
 
 @media all and (max-width: 1024px){
-    header, #stays{
+    header, #stays, #footer, #stays-marseille{
         flex-direction: column;
     }
 
-    #latest, aside, #footer div{
+    #latest, aside, #footer div, #nav li, #stays, #stays-marseille div{
         flex: 100%
-    }
-
-    #footer{
-        flex-direction: column;
-    }
-
-    #nav li{
-        flex: 100%;
     }
 }
 
@@ -94,25 +86,6 @@ nav li{
 #popular-marseille img{
     width: 150px;
     height: 150px
-}
-
-#activities-marseille div{
-    max-width: 300px;
-}
-
-#activities img{
-    max-height: 200px;
-    min-width: 300px
-}
-
-#activities-marseille div{
-    max-height: 250px;
-}
-
-#activities-marseille:nth-child(2),
-#activities-marseille:nth-child(3),#activities-marseille:nth-child(5),
-#activities-marseille:nth-child(6){
-    max-height: 200px;
 }
 
 nav li:hover{
@@ -161,12 +134,6 @@ nav a:hover,i, nav ul:nth-child(1){
     max-width: 100%;
     width: auto;
     align-content:baseline;
-}
-
-#activities-marseille{
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 a{
@@ -243,3 +210,4 @@ form i{
 .box br, #mostpopular br{
     margin-bottom: 5px;
 }
+
