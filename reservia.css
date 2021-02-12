@@ -4,7 +4,6 @@
 }
 
 footer{
-    display: flex;
     justify-content: flex-start
 }
 
@@ -14,7 +13,6 @@ footer div{
 }
 
 header{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -37,11 +35,11 @@ aside img{
 }
 
 #activities{
-    min-height: 400px;
+    min-height: 575px;
+    background-color: burlywood;
 }
 
 #stays{
-    display:flex;
     flex-wrap: nowrap;
 }
 
@@ -55,7 +53,7 @@ nav{
 }
 
 ul{
-list-style-type: none;
+    list-style-type: none;
 }
 
 nav ul{
@@ -88,7 +86,7 @@ nav li{
 }
 
 #stays-marseille img{
-    width: 225px;
+    min-width: 225px;
     max-width: 250px;
     height: 125px;
 }
@@ -98,30 +96,50 @@ nav li{
     height: 150px
 }
 
+#activities-marseille div{
+    max-width: 300px;
+}
+
 #activities img{
-    width: 300px;
+    max-height: 200px;
+    min-width: 300px
+}
+
+#activities-marseille div{
+    max-height: 250px;
+}
+
+#activities-marseille:nth-child(2),
+#activities-marseille:nth-child(3),#activities-marseille:nth-child(5),
+#activities-marseille:nth-child(6){
+    max-height: 200px;
 }
 
 nav li:hover{
     border-top: 2px solid #0065FC;
+}
+
+nav li:nth-child(3){
+    font-weight: bold;
+}
+
+nav a:hover,i, nav ul:nth-child(1){
     color: #0065FC;
 }
 
 #stays-marseille{
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 #popular-marseille{
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     border-radius: 6px;
     justify-content: space-around;
 }
 
-#stays-marseille div, #popular-marseille div, #activities-marseille div{
+.box{
     box-shadow: 3px 3px 6px grey;
 }
 
@@ -129,6 +147,7 @@ nav li:hover{
     border-radius: 6px;
     max-width: 300px;
     margin-right: 12px;
+    margin-bottom: 15px;
 }
 
 #popular-marseille div{
@@ -144,18 +163,10 @@ nav li:hover{
     align-content:baseline;
 }
 
-#stays-marseille div:nth-child(1),#stays-marseille div:nth-child(2),#stays-marseille div:nth-child(3){
-    margin-bottom: 15px;
-}
-
 #activities-marseille{
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-#activities-marseille div:nth-child(1), #activities-marseille div:nth-child(4){
-    flex: 100%
 }
 
 a{
@@ -163,7 +174,7 @@ a{
     color: black
 }
 
-#filters{
+#filters, footer, header, #stays, #popular-marseille, #stays-marseille, #activities-marseille{
     display:flex;
 }
 
@@ -189,13 +200,14 @@ a{
 #search button{
     background-color: #0065FC;
     color: white;
-    border-radius: 6px;
+    border-radius: 0px 6px 6px 0px;
 }
 
 #search input, #search button{
     padding: 12px;
     font-weight: bold;
     font-size: 16px;
+    border: none
 }
 
 #filters i{
@@ -206,10 +218,6 @@ a{
     margin-right: 12px;
 }
 
-i{
-    color: #0065FC;
-}
-
 #information{
     border: 1px solid lightgrey;
     border-radius:32px;
@@ -218,5 +226,14 @@ i{
 
 form i{
     margin-right: 12px;
+    margin-left: 12px;
     color: black
+}
+
+.four-stars{
+    display:flex;
+}
+
+.four-stars:nth-child(4){
+    color: lightgray
 }
