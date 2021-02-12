@@ -196,8 +196,9 @@ a{
 
 #information{
     border: 1px solid lightgrey;
-    border-radius:32px;
-    padding: 12px;
+    border-radius:64px;
+    padding: 8px;
+    margin-right: 12px;
 }
 
 form i{
