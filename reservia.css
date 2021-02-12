@@ -230,10 +230,16 @@ form i{
     color: black
 }
 
-.four-stars{
+.four-stars, .three-stars, .five-stars{
     display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
-.four-stars:nth-child(4){
+.four-stars i:nth-child(5),.three-stars i:nth-child(5),.three-stars i:nth-child(4){
     color: lightgray
+}
+
+.box br, #mostpopular br{
+    margin-bottom: 5px;
 }
