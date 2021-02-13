@@ -246,12 +246,13 @@ h2 i{
 }
 
 #activities-list {
-    flex-direction:nowrap row;
+    flex-flow:nowrap row;
 }
 
 #activities-list img{
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
+    flex: 22;
 }
 
 #activities-list .box{
@@ -259,6 +260,7 @@ h2 i{
     overflow: hidden;
     padding-bottom: 6px;
     display: flex;
+    flex:1
 }
 
 #activities{
@@ -272,6 +274,16 @@ h2 i{
     height: 525px;
 }
 
-#column1 .box, #column3 .box{
-    flex: 1;
+#activities a{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: flex-end;
+}
+
+#column2 .box:first-child{
+    flex:1.8
+}
+
+#column4 .box:nth-child(2){
+    flex:1.3
 }
