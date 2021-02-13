@@ -27,13 +27,15 @@
                 <p><i class="fas fa-map-marker-alt"></i><input type="text" name="recherche" /> <button href=#>Rechercher</button></p> 
             </form>
 
-            <h2>Filtres</h2>
+            <div id='filterbar'>
+                <h2>Filtres</h2>
                 <ul id="filters">
                     <li><i class="fas fa-money-bill-wave"></i>Economique</li>
                     <li><i class="fas fa-child"></i>Familial</li>
                     <li><i class="fas fa-heart"></i>Romantique</li>
                     <li><i class="fas fa-dog"></i>Animaux autorisés</li>
                 </ul>
+            </div>
 
             <p><i id="information" class="fas fa-info"></i> Plus de 500 hébergements sont disponibles dans cette ville</p>
         </section>
@@ -42,7 +44,7 @@
             
             <section id='latest'>
                 <h2>Hébergements à Marseille</h2>
-                <div id='stays-marseille'>
+                <div id='stays-list'>
                     <div class='box'>
                         <a href="#">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo d'hôtel">
@@ -132,7 +134,7 @@
 
             <aside id='mostpopular'>
                 <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
-                    <div id='popular-marseille'>
+                    <div id='popular-list'>
                         <div class='box'>
                             <a href="#">
                                 <img src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg' alt="Photo d'hôtel">
@@ -184,7 +186,7 @@
 
         <section id='activities'>
             <h2>Activités à Marseille</h2>
-            <div id="activities-marseille">
+            <div id="activities-list">
                 <div class='box' class='big-box'><a href="#">
                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port">
                     <p><strong>Vieux Port</strong></p>    

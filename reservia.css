@@ -1,3 +1,8 @@
+body{
+    max-width: 1280px;
+    margin: auto
+}
+
 #activities, #search, footer, section, #stays, header{
     width: 95%;
     margin-bottom: 14px;
@@ -68,21 +73,21 @@ nav li{
 }
 
 @media all and (max-width: 1024px){
-    header, #stays, #footer, #stays-marseille{
+    header, #stays, #footer, #stays-list{
         flex-direction: column;
     }
 
-    #latest, aside, #footer div, #nav li, #stays, #stays-marseille div, .box{
+    #latest, aside, #footer div, #nav li, #stays, #stays-list div, .box{
         width: 100%
     }
 }
 
-#stays-marseille img{
-    min-width: 275px;
+#stays-list img{
+    min-width: 225px;
     height: 125px;
 }
 
-#popular-marseille img{
+#popular-list img{
     width: 150px;
     height: 150px
 }
@@ -100,12 +105,12 @@ nav a:hover,i{
     color: #0065FC;
 }
 
-#stays-marseille{
+#stays-list{
     flex-wrap: wrap;
     justify-content: left;
 }
 
-#popular-marseille{
+#popular-list{
     flex-wrap: nowrap;
     flex-direction: column;
     border-radius: 6px;
@@ -118,12 +123,12 @@ nav a:hover,i{
     margin-bottom: 15px;
 }
 
-#stays-marseille div{
+#stays-list div{
     width: fit-content;
     margin-right: 48px;
 }
 
-#popular-marseille div{
+#popular-list div{
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -134,7 +139,7 @@ nav a:hover,i{
     align-content:baseline;
 }
 
-#popular-marseille i{
+#popular-list i{
     position: relative;
     top: +52px;
 }
@@ -144,7 +149,7 @@ a{
     color: black
 }
 
-#filters, footer, header, #stays, #popular-marseille, #stays-marseille, #activities-marseille{
+#filters, footer, header, #stays, #popular-list, #stays-list, #activities-list, #filterbar{
     display:flex;
 }
 
@@ -225,28 +230,21 @@ form i{
     margin-bottom: 10px;
 }
 
-#latest i{
-    position: relative;
-    left: +6px;
-    top: -6px;
+.box p, .five-stars, .four-stars, .three-stars{
+    margin-bottom: 6px;
+    margin-left: 6px;
 }
 
-.box p{
-    position: relative;
-    left: +6px;
-    background:none
-}
-
-#activities-marseille {
+#activities-list {
     flex-wrap:wrap
 }
 
-#activities-marseille img{
+#activities-list img{
     width: 300px;
     height: 150px;
 }
 
-#activities-marseille div{
+#activities-list div{
     margin-right: 24px;
 }
 
@@ -258,4 +256,8 @@ strong{
 h2 i{
     color: black;
     text-align:end;
+}
+
+#search h2{
+    align-self: center;
 }
