@@ -1,6 +1,8 @@
 body{
     max-width: 1280px;
-    margin: auto
+    margin: auto;
+    font-family: 'Raleway', Arial, serif;
+    background-color: #F2F2F2;
 }
 
 #activities, #search, footer, section, #stays, header{
@@ -37,11 +39,6 @@ section img{
 
 aside img{
     border-radius: 6px 0px 0px 6px;
-}
-
-#activities{
-    min-height: 575px;
-    max-height: 575px;
 }
 
 #stays{
@@ -117,8 +114,11 @@ nav a:hover,i{
     justify-content: space-around;
 }
 
-.box{
+#stays .box{
     box-shadow: 3px 3px 6px grey;
+}
+
+.box{
     border-radius: 6px;
     margin-bottom: 15px;
 }
@@ -170,12 +170,6 @@ a{
 @font-face {
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf');
-}
-
-
-*{
-    font-family: 'Raleway', Arial, serif;
-    background-color: #F2F2F2;
 }
 
 #search button{
@@ -235,19 +229,6 @@ form i{
     margin-left: 6px;
 }
 
-#activities-list {
-    flex-wrap:wrap
-}
-
-#activities-list img{
-    width: 300px;
-    height: 150px;
-}
-
-#activities-list div{
-    margin-right: 24px;
-}
-
 strong{
     font-size: 18px;
     background: none;
@@ -260,4 +241,37 @@ h2 i{
 
 #search h2{
     align-self: center;
+}
+
+#activities-list {
+    flex-direction:nowrap row;
+}
+
+#activities-list img{
+    width: 100%;
+    max-width: 300px;
+    height: 85%;
+}
+
+#activities-list .box{
+    margin-right: 24px;
+}
+
+#activities{
+    min-height: 575px;
+    max-height: 575px;
+}
+
+#column1, #column2, #column3, #column4{
+    display: flex;
+    flex-flow: nowrap column;
+    height: 525px;
+}
+
+#column1 .box, #column3 .box{
+    flex: 1;
+}
+
+#column1 .box img, #column3 .box img{
+    height: 475px;
 }
