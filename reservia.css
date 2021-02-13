@@ -6,7 +6,6 @@ body{
 }
 
 #activities, #search, footer, section, #stays, header{
-    width: 95%;
     margin-bottom: 14px;
 }
 
@@ -34,11 +33,11 @@ header{
 }
 
 section img{
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 24px 24px 0px 0px;
 }
 
 aside img{
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 24px 0px 0px 24px;
 }
 
 #stays{
@@ -115,13 +114,14 @@ nav a:hover,i{
 }
 
 #stays .box{
-    box-shadow: 3px 3px 6px grey;
+    box-shadow: 3px 3px 6px lightgray;
 }
 
 .box{
-    border-radius: 6px;
+    border-radius: 24px;
     margin-bottom: 15px;
     border-bottom: 1px solid lightgray;
+    padding: 8px
 }
 
 #stays-list div{
@@ -227,8 +227,8 @@ form i{
 }
 
 .box p, .five-stars, .four-stars, .three-stars{
-    margin-bottom: 6px;
-    margin-left: 6px;
+    margin-bottom: 12px;
+    margin-left: 12px;
 }
 
 strong{
