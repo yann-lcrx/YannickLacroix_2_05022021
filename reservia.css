@@ -149,7 +149,7 @@ nav a:hover,i{
     min-width: 190px;
 }
 
-#popular-list div{
+#popular-list .box{
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -309,4 +309,16 @@ h2 i{
 
 #column4 .box:nth-child(2){
     flex:1.3
+}
+
+#headsection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#headsection i{
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
 }
