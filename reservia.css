@@ -1,11 +1,11 @@
 body{
-    max-width: 1280px;
+    max-width: 1200px;
     margin: auto;
     font-family: 'Raleway', Arial, serif;
     background-color: #F2F2F2;
 }
 
-#activities, #search, footer, section, #stays, header{
+#activities, #search, section, #stays, header{
     margin-bottom: 14px;
 }
 
@@ -17,6 +17,10 @@ footer{
 footer div{
     flex: 33%;
     text-align: left
+}
+
+footer a:hover{
+    color: #0065FC;
 }
 
 header{
@@ -63,6 +67,10 @@ aside img{
 aside{
     flex:30%;
     border-radius: 6px;
+}
+
+.indent{
+    margin-left: 64px;
 }
 
 nav{
@@ -120,7 +128,7 @@ nav a:hover,i{
 
 #stays-list{
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 }
 
 #popular-list{
@@ -144,7 +152,7 @@ nav a:hover,i{
 #stays-list .box{
     margin-right: 24px;
     flex: 1;
-    max-width: 250px;
+    max-width: 210px;
     overflow: hidden;
     min-width: 190px;
 }
@@ -172,7 +180,7 @@ a{
     text-decoration: none;
 }
 
-.box a, footer a, nav a{
+.box a, footer a, nav a, .indent a{
     color: black
 }
 
@@ -209,7 +217,7 @@ a{
 #search input, #search button{
     padding: 12px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     border: none
 }
 
@@ -260,7 +268,7 @@ form i{
 }
 
 strong{
-    font-size: 18px;
+    font-size: 1.1em;
     background: none;
 }
 
@@ -292,8 +300,7 @@ h2 i{
 }
 
 #activities{
-    min-height: 575px;
-    max-height: 575px;
+    height: 525px;
 }
 
 #column1, #column2, #column3, #column4{
