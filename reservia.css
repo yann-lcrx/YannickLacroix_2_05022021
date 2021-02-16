@@ -138,7 +138,7 @@ nav a:hover,i{
     border-radius: 24px;
     margin-bottom: 15px;
     border-bottom: 1px solid lightgray;
-    padding: 8px
+    padding: 7px
 }
 
 #stays-list .box{
@@ -156,6 +156,7 @@ nav a:hover,i{
     flex-wrap: wrap;
     max-height: 150px;
     max-width: 100%;
+    flex: 1;
     width: auto;
     align-content:baseline;
 }
