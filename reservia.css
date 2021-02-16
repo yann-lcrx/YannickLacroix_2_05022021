@@ -20,8 +20,24 @@ footer div{
 }
 
 header{
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
+}
+
+header div{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header div p{
+    align-self: center;
+    height: 80px;
+    padding: 10px;
+    font-weight:bold;
+}
+
+header div p a{
+    color: #0065FC;
 }
 
 #stays{
@@ -79,8 +95,9 @@ nav li{
 }
 
 #stays-list img{
-    min-width: 225px;
+    min-width: 175px;
     height: 125px;
+    width: 100%;
 }
 
 #popular-list img{
@@ -124,9 +141,12 @@ nav a:hover,i{
     padding: 8px
 }
 
-#stays-list div{
-    width: fit-content;
-    margin-right: 48px;
+#stays-list .box{
+    margin-right: 24px;
+    flex: 1;
+    max-width: 250px;
+    overflow: hidden;
+    min-width: 190px;
 }
 
 #popular-list div{
@@ -147,6 +167,9 @@ nav a:hover,i{
 
 a{
     text-decoration: none;
+}
+
+.box a, footer a, nav a{
     color: black
 }
 
@@ -226,7 +249,7 @@ form i{
     margin-bottom: 10px;
 }
 
-.box p, .five-stars, .four-stars, .three-stars{
+.box p, #latest .box div{
     margin-bottom: 12px;
     margin-left: 12px;
 }
@@ -256,7 +279,7 @@ h2 i{
 }
 
 #activities-list .box{
-    margin-right: 24px;
+    margin-right: 20px;
     overflow: hidden;
     padding-bottom: 6px;
     display: flex;
@@ -271,7 +294,7 @@ h2 i{
 #column1, #column2, #column3, #column4{
     display: flex;
     flex-flow: nowrap column;
-    height: 525px;
+    height: 475px;
 }
 
 #activities a{
