@@ -216,11 +216,12 @@
         margin-right: 12px;
     }
 
-    #information{
+    #infobar i{
         border: 1px solid lightgrey;
         border-radius:64px;
         padding: 8px;
         margin-right: 12px;
+        align-self:center;
     }
 
     form i{
@@ -316,6 +317,10 @@
         align-self: center;
         color: black;
         font-size: 1.3em;
+    }
+
+    #infobar{
+        display: flex;
     }
 }
 
@@ -441,5 +446,16 @@
         padding: 32px;
         border-radius: 64px;
         margin-right: 32px;
+    }
+
+    #infobar i{
+        font-size:2.3em;
+        margin-right:32px;
+        padding:16px;
+        align-self: baseline
+    }
+
+    #infobar p{
+        align-self: baseline
     }
 }
