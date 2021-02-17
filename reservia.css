@@ -372,6 +372,7 @@
 
     .three-stars,.four-stars,.five-stars{
         font-size:2.3em;
+        margin-left: 24px;
     }
 
     #popular-list img{
@@ -394,5 +395,20 @@
 
     #search button{
         border-radius: 0px 12px 12px 0px;
+    }
+
+    .box{
+        margin-bottom: 32px;
+        padding:16px;
+        border-radius: 32px;
+    }
+
+    .stay-info{
+        margin-left:32px
+    }
+
+    .box p{
+        margin-bottom: 24px;
+        margin-left: 24px
     }
 }
