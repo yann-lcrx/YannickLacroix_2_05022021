@@ -26,7 +26,11 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <form method="post" action="traitement.php">
-                <p><i class="fas fa-map-marker-alt"></i><input type="text" name="recherche" /> <button formaction=#>Rechercher</button></p> 
+                <p>
+                    <i class="fas fa-map-marker-alt"></i><input type="text" name="recherche" />
+                    <button class='desktop-only' formaction=#>Rechercher</button>
+                    <button class='mobile-only' formaction=#><i class="fas fa-search"></i></button>
+                </p> 
             </form>
 
             <div id='filterbar'>

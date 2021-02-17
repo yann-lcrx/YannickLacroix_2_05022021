@@ -6,6 +6,10 @@
         background-color: #F2F2F2;
     }
 
+    .mobile-only{
+        display: none;
+    }
+
     #activities, #search, section, #stays, header{
         margin-bottom: 14px;
     }
@@ -457,5 +461,40 @@
 
     #infobar p{
         align-self: baseline
+    }
+
+    .desktop-only{
+        display:none;
+    }
+
+    .mobile-only{
+        display:initial
+    }
+
+    button i{
+        color:white
+    }
+    
+    form p{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    form i{
+        align-self:center;
+        flex: 0.14
+    }
+
+    form input{
+        flex:1
+    }
+
+    #search button{
+        padding: 32px;
+        border-radius: 32px
+    }
+
+    form{
+        margin-left:32px
     }
 }
