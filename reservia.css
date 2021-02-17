@@ -361,8 +361,10 @@
     }
 
     #filters li{
-        padding: 20px;
+        padding-right: 48px;
         border-radius: 64px;
+        margin-bottom: 32px;
+        border: 2px solid lightgray
     }
 
     #filters{
@@ -427,11 +429,17 @@
     }
 
     #activities-list img,#stays-list img{
-        height: 400px;
+        height: 375px;
     }
 
     
     #activities, #search, section, #stays, #mostpopular, header, footer ul{
         margin-bottom: 64px;
+    }
+
+    #filters i{
+        padding: 32px;
+        border-radius: 64px;
+        margin-right: 32px;
     }
 }
