@@ -92,16 +92,6 @@ nav li{
     margin-right:15px
 }
 
-@media all and (max-width: 1024px){
-    header, #stays, #footer, #stays-list{
-        flex-direction: column;
-    }
-
-    #latest, aside, #footer div, #nav li, #stays, #stays-list div, .box{
-        width: 100%
-    }
-}
-
 #stays-list img{
     min-width: 175px;
     height: 125px;
@@ -159,11 +149,7 @@ nav a:hover,i{
 
 #popular-list .box{
     min-width: 300px;
-    max-height: 150px;
-    max-width: 100%;
     flex: 1;
-    width: auto;
-    align-content:baseline;
 }
 
 .stay-info{
@@ -333,4 +319,56 @@ h2 i{
     align-self: center;
     color: black;
     font-size: 1.3em;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        width: auto;
+    }
+
+    header, footer, #stays-list, #activities-list{
+        flex-direction: column;
+    }
+
+    #stays{
+        flex-direction: column-reverse;
+    }
+
+    header img{
+        width:25%;
+    }
+
+    p, #search input, #search button, ul li{
+        font-size:2.5em;
+    }
+
+    #filterbar{
+        flex-wrap: wrap;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 3.5em
+    }
+
+    h3{
+        font-size:2.8em
+    }
+
+    #headsection i{
+        font-size:3em
+    }
+
+    #filters li{
+        padding: 20px;
+        border-radius: 64px;
+    }
+
+    #filters{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
 }
