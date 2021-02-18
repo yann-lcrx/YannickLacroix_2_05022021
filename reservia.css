@@ -495,8 +495,15 @@
         height: 125px;
     }
 
-    #activities-list .box{
-        margin-right: 4px;
-        margin-bottom: 12px;
+    #activities-list{
+        width:87%;
+        margin:auto;
+        justify-content: space-around;
+        flex-flow: wrap row;
+    }
+
+    #column1, #column3, #column2, #column4{
+        max-width: 50%;
+        flex:50%;
     }
 }   
