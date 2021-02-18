@@ -328,7 +328,7 @@
     }
 }
 
-@media all and (max-width: 599px) and (orientation: portrait){
+@media all and (max-width: 599px){
     body{
         width: 95%;
     }
@@ -466,4 +466,56 @@
     header div p{
         height: 0px
     }
+
 }
+
+@media all and (min-width:600px) and (max-width: 1024px){
+    body{
+        width: 95%;
+    }
+
+    #activities-list{
+        flex-direction: column;
+    }
+
+    #stays{
+        flex-direction: column-reverse;
+    }
+
+    header img{
+        height:75%;
+    }
+
+    #column1, #column2, #column3, #column4{
+        flex-flow: row nowrap;
+        flex:1;
+    }
+
+    #activities-list img{
+        width: 100%;
+        max-width:none;
+        flex:none
+    }
+
+    #activities-list .box a{
+        width: 100%;
+    }
+
+    #column4 .box:nth-child(2), #column2 .box:first-child{
+        flex:1
+    }
+
+    #stays-list .box{
+        min-width: 200px;
+        max-width: 33%;
+    }
+
+    #popular-list .box{
+        max-width: 75%;
+    }
+
+    #popular-list img{
+        width: 25%;
+        height: 125px;
+    }
+}   
