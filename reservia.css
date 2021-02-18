@@ -226,6 +226,8 @@
         padding: 8px;
         margin-right: 12px;
         align-self:center;
+        padding-left:12px;
+        padding-right:12px;
     }
 
     form i{
@@ -406,8 +408,6 @@
     }
 
     #infobar i{
-        padding-left:12px;
-        padding-right:12px;
         align-self: baseline
     }
 
@@ -466,16 +466,11 @@
     header div p{
         height: 0px
     }
-
 }
 
 @media all and (min-width:600px) and (max-width: 1024px){
     body{
         width: 95%;
-    }
-
-    #activities-list{
-        flex-direction: column;
     }
 
     #stays{
@@ -484,25 +479,6 @@
 
     header img{
         height:75%;
-    }
-
-    #column1, #column2, #column3, #column4{
-        flex-flow: row nowrap;
-        flex:1;
-    }
-
-    #activities-list img{
-        width: 100%;
-        max-width:none;
-        flex:none
-    }
-
-    #activities-list .box a{
-        width: 100%;
-    }
-
-    #column4 .box:nth-child(2), #column2 .box:first-child{
-        flex:1
     }
 
     #stays-list .box{
@@ -517,5 +493,10 @@
     #popular-list img{
         width: 25%;
         height: 125px;
+    }
+
+    #activities-list .box{
+        margin-right: 4px;
+        margin-bottom: 12px;
     }
 }   
