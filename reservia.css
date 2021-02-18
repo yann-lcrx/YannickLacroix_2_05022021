@@ -40,7 +40,7 @@
 
     header div p{
         align-self: center;
-        height: 80px;
+        height: 30px;
         padding: 10px;
         font-weight:bold;
     }
@@ -138,7 +138,7 @@
     }
 
     .box{
-        border-radius: 24px;
+        border-radius: 32px;
         margin-bottom: 15px;
         border-bottom: 1px solid lightgray;
         padding: 7px
@@ -328,7 +328,7 @@
     }
 }
 
-@media screen and (max-width: 1024px){
+@media all and (max-width: 599px) and (orientation: portrait){
     body{
         width: 95%;
     }
@@ -342,37 +342,17 @@
     }
 
     header img{
-        width:25%;
-    }
-
-    p, ul li{
-        font-size:2.5em;
+        height:25%;
     }
 
     #filterbar{
         flex-wrap: wrap;
     }
 
-    h1{
-        font-size: 4em;
-    }
-
-    h2{
-        font-size: 3.5em
-    }
-
-    h3{
-        font-size:2.8em
-    }
-
-    #headsection i{
-        font-size:3em
-    }
-
     #filters li{
-        padding-right: 48px;
+        padding-right: 12px;
         border-radius: 64px;
-        margin-bottom: 32px;
+        margin-bottom: 12px;
         border: 2px solid lightgray
     }
 
@@ -381,13 +361,7 @@
         justify-content: left;
     }
 
-    .three-stars,.four-stars,.five-stars{
-        font-size:2.3em;
-        margin-left: 24px;
-    }
-
     #popular-list img{
-        height: 350px;
         width: 40%;
     }
 
@@ -404,27 +378,13 @@
         border-radius: 0px 12px 12px 0px;
     }
 
-    .box{
-        margin-bottom: 32px;
-        padding:16px;
-        border-radius: 32px;
-    }
-
-    .stay-info{
-        margin-left:32px
-    }
-
-    .box p{
-        margin-bottom: 24px;
-        margin-left: 24px
-    }
-
     #column1,#column2,#column3,#column4{
         flex:1
     }
 
     #activities-list .box{
-        margin-right:0px
+        margin-right:0px;
+        overflow:initial;
     }
 
     #activities-list .box a{
@@ -436,26 +396,18 @@
         max-width:none;
         flex:none
     }
-
-    #activities-list img,#stays-list img{
-        height: 375px;
-    }
-
     
-    #activities, #search, section, #stays, #mostpopular, header, footer ul{
-        margin-bottom: 64px;
+    #activities, #search, section, #stays, #mostpopular{
+        margin-bottom: 32px;
     }
 
     #filters i{
-        padding: 32px;
         border-radius: 64px;
-        margin-right: 32px;
     }
 
     #infobar i{
-        font-size:2.3em;
-        margin-right:32px;
-        padding:16px;
+        padding-left:12px;
+        padding-right:12px;
         align-self: baseline
     }
 
@@ -490,12 +442,12 @@
     }
 
     #search button{
-        padding: 32px;
+        padding: 6px;
         border-radius: 32px
     }
 
     form{
-        margin-left:32px
+        margin-left:16px
     }
 
     #topbar{
@@ -503,11 +455,15 @@
         justify-content: space-between;
     }
 
-    nav{
-        width:100%;
+    nav li{
+        flex:1;
     }
 
-    nav ul{
-        justify-content: space-around;
+    header img{
+        margin-top: 12px;
+    }
+
+    header div p{
+        height: 0px
     }
 }
