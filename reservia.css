@@ -497,4 +497,17 @@
     form{
         margin-left:32px
     }
+
+    #topbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav ul{
+        justify-content: space-around;
+    }
 }
