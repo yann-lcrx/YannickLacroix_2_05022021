@@ -369,10 +369,6 @@
         margin-bottom: 10px;
     }
 
-    #search button{
-        border-radius: 0px 12px 12px 0px;
-    }
-
     #column1,#column2,#column3,#column4{
         flex:1
     }
