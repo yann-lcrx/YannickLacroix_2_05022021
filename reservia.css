@@ -386,7 +386,6 @@
 
     #activities-list .box{
         margin-right:0px;
-        overflow:initial;
     }
 
     #activities-list .box a{
@@ -396,7 +395,8 @@
     #activities-list img{
         width: 100%;
         max-width:none;
-        flex:none
+        flex:none;
+        max-height: 227px;
     }
     
     #activities, #search, section, #stays, #mostpopular{
