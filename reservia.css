@@ -40,7 +40,6 @@
 
     header div p{
         align-self: center;
-        height: 30px;
         padding: 10px;
         font-weight:bold;
     }
@@ -143,7 +142,7 @@
     #stays-list .box{
         margin-right: 24px;
         flex: 1;
-        max-width: 210px;
+        max-width: 225px;
         overflow: hidden;
         min-width: 190px;
     }
@@ -349,9 +348,7 @@
 
     #filters li{
         padding-right: 12px;
-        border-radius: 64px;
         margin-bottom: 12px;
-        border: 2px solid lightgray
     }
 
     #filters{
@@ -530,13 +527,15 @@
 
     #filters li{
         padding-right: 12px;
-        border-radius: 64px;
-        margin-bottom: 12px;
         border: 2px solid lightgray
     }
 
     #filters{
         flex-wrap: wrap;
         justify-content: left;
+    }
+
+    .stay-info{
+        margin-left: 12px;
     }
 }   
