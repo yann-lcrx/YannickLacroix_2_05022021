@@ -3,7 +3,6 @@
         max-width: 1200px;
         margin: auto;
         font-family: 'Raleway', Arial, serif;
-        background-color: #F2F2F2;
     }
 
     .mobile-only{
@@ -48,12 +47,13 @@
         color: #0065FC;
     }
 
-    #stays{
-        min-height: 630px;
+    #latest, aside, footer{
+        background-color: #F2F2F2;
     }
 
     #latest{
         flex:70%;
+        margin-right: 20px;
     }
 
     section img{
@@ -282,6 +282,7 @@
 
     #activities-list .box{
         margin-right: 20px;
+        margin-bottom: 20px;
         overflow: hidden;
         padding-bottom: 6px;
         display: flex;
@@ -334,8 +335,12 @@
         padding-bottom: 12px;
     }
 
-    #filterbar h2{
+    #filterbar strong{
         margin-right: 32px
+    }
+
+    #latest h2{
+        margin-left:24px
     }
 }
 
@@ -344,6 +349,18 @@
         width: 95%;
     }
 
+    p, i, li{
+        font-size:0.95em
+    }
+
+    h3{
+        font-size:1.05em
+    }
+
+    section h2{
+        font-size:1.3em
+    }
+    
     header, footer, #stays-list, #activities-list{
         flex-direction: column;
     }
@@ -377,6 +394,10 @@
     #stays-list .box{
         max-width:none;
         margin-right: 0px;
+    }
+
+    #latest h2{
+        margin-left:0px
     }
 
     .box br{
@@ -534,7 +555,7 @@
     }
 
     h1,h2{
-        font-size:1.8em;
+        font-size:1.65em;
     }
 
     #filterbar{
@@ -553,5 +574,9 @@
 
     .stay-info{
         margin-left: 12px;
+    }
+
+    #latest h2{
+        margin-left:0px
     }
 }   
