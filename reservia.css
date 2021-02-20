@@ -410,6 +410,8 @@
 
     #activities-list .box{
         margin-right:0px;
+        max-height:175px;
+        margin-bottom: 24px
     }
 
     #activities-list .box a{
@@ -578,5 +580,13 @@
 
     #latest h2{
         margin-left:0px
+    }
+
+    #column2 .box:first-child{
+        flex:1.4
+    }
+
+    #column4 .box:nth-child(2){
+        flex:1.2
     }
 }   
