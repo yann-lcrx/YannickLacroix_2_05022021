@@ -9,8 +9,8 @@
         display: none;
     }
 
-    .no-desktop{
-        display: none;
+    .tablet-only{
+        display:none;
     }
 
     #activities, #search, section, #stays, header{
@@ -518,6 +518,10 @@
         width: 95%;
     }
 
+    .tablet-only{
+        display: initial;
+    }
+
     #stays{
         flex-direction: column-reverse;
     }
@@ -527,7 +531,7 @@
     }
 
     #stays-list .box{
-        min-width: 205px;
+        min-width: 210px;
         max-width: 33%;
     }
 
@@ -610,10 +614,6 @@
 
     .indent{
         margin-left:16px
-    }
-
-    .no-desktop{
-        display:initial
     }
 
     .desktop-only{
