@@ -353,10 +353,6 @@
 }
 
 @media all and (max-width: 599px){
-    body{
-        width: 95%;
-    }
-
     p, i, li{
         font-size:0.95em
     }
@@ -373,26 +369,12 @@
         flex-direction: column;
     }
 
-    #stays{
-        flex-direction: column-reverse;
-    }
-
     header img{
         height:25%;
     }
 
-    #filterbar{
-        flex-wrap: wrap;
-    }
-
     #filters li{
-        padding-right: 12px;
         margin-bottom: 12px;
-    }
-
-    #filters{
-        flex-wrap: wrap;
-        justify-content: left;
     }
 
     #popular-list img{
@@ -514,16 +496,8 @@
 }
 
 @media all and (min-width:600px) and (max-width: 1024px){
-    body{
-        width: 95%;
-    }
-
     .tablet-only{
         display: initial;
-    }
-
-    #stays{
-        flex-direction: column-reverse;
     }
 
     header img{
@@ -572,20 +546,6 @@
         font-size:1.65em;
     }
 
-    #filterbar{
-        flex-wrap: wrap;
-    }
-
-    #filters li{
-        padding-right: 12px;
-        border: 1px solid lightgray
-    }
-
-    #filters{
-        flex-wrap: wrap;
-        justify-content: left;
-    }
-
     .stay-info{
         margin-left: 12px;
     }
@@ -604,6 +564,10 @@
 }   
 
 @media all and (max-width: 1024px){
+    body{
+        width: 95%;
+    }
+
     #latest{
         margin-right:0px
     }
@@ -618,5 +582,22 @@
 
     .desktop-only{
         display:none
+    }
+    
+    #stays{
+        flex-direction: column-reverse;
+    }
+
+    #filterbar{
+        flex-wrap: wrap;
+    }
+    
+    #filters{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    #filters li{
+        padding-right: 12px;
     }
 }
