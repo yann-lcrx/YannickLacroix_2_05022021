@@ -58,6 +58,7 @@
     #latest{
         flex:70%;
         margin-right: 64px;
+        margin-left:36px
     }
 
     section img{
@@ -75,10 +76,6 @@
     aside{
         flex:30%;
         border-radius: 6px;
-    }
-
-    .indent{
-        margin-left: 64px;
     }
 
     ul{
@@ -123,7 +120,6 @@
     #stays-list{
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: 24px
     }
 
     #popular-list{
@@ -261,7 +257,7 @@
     }
 
     strong{
-        font-size: 1.1em;
+        font-size: 1.05em;
         background: none;
     }
 
@@ -346,10 +342,6 @@
     #filterbar p{
         align-self: center
     }
-
-    #latest h2{
-        margin-left:24px
-    }
 }
 
 @media all and (max-width: 599px){
@@ -361,8 +353,12 @@
         font-size:1.05em
     }
 
-    section h2{
-        font-size:1.3em
+    h1{
+        font-size:1.45em
+    }
+
+    h2{
+        font-size:1.35em
     }
     
     header, footer, #stays-list, #activities-list{
@@ -384,10 +380,6 @@
     #stays-list .box{
         max-width:none;
         margin-right: 0px;
-    }
-
-    #latest h2{
-        margin-left:0px
     }
 
     .box br{
@@ -569,15 +561,7 @@
     }
 
     #latest{
-        margin-right:0px
-    }
-
-    #stays-list{
-        margin-left:0px
-    }
-
-    .indent{
-        margin-left:16px
+        margin:0px
     }
 
     .desktop-only{
