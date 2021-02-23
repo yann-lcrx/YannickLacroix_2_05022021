@@ -21,7 +21,7 @@
                         <li><a href=#activities>Activités</a></li>
                     </ul>
                 </nav>
-                <p class='desktop-only'><a href=#>S'inscrire</a></p>
+                <p class='no-mobile'><a href=#>S'inscrire</a></p>
             </div>
         </header>
 
@@ -32,7 +32,7 @@
             <form method="post" action="traitement.php">
                 <p>
                     <i class="fas fa-map-marker-alt"></i><input type="text" name="recherche" />
-                    <button class='desktop-only' formaction=#>Rechercher</button>
+                    <button class='no-mobile' formaction=#>Rechercher</button>
                     <button class='mobile-only' formaction=#><i class="fas fa-search"></i></button>
                 </p> 
             </form>
@@ -208,7 +208,8 @@
                 <div id="column1">
                     <div class='box'>
                         <a href="#">
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port">
+                            <img class="no-desktop" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port">
+                            <img class="desktop-only" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port">
                             <p><strong>Vieux Port</strong></p>    
                         </a>
                     </div>
@@ -234,7 +235,8 @@
                 <div id="column3">
                     <div class='box'>
                         <a href="#">
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des Calanques">
+                            <img class="no-desktop" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des Calanques">
+                            <img class="desktop-only" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des Calanques">
                             <p><strong>Parc National des Calanques</strong></p>
                         </a>
                     </div>

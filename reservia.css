@@ -1,11 +1,15 @@
 @media all{
     body{
-        max-width: 1200px;
+        max-width: 1340px;
         margin: auto;
         font-family: 'Raleway', Arial, serif;
     }
 
     .mobile-only{
+        display: none;
+    }
+
+    .no-desktop{
         display: none;
     }
 
@@ -53,7 +57,7 @@
 
     #latest{
         flex:70%;
-        margin-right: 20px;
+        margin-right: 64px;
     }
 
     section img{
@@ -119,6 +123,7 @@
     #stays-list{
         flex-wrap: wrap;
         justify-content: center;
+        margin-left: 24px
     }
 
     #popular-list{
@@ -142,7 +147,6 @@
     #stays-list .box{
         margin-right: 24px;
         flex: 1;
-        max-width: 225px;
         overflow: hidden;
         min-width: 190px;
     }
@@ -302,7 +306,7 @@
     }
 
     #column2 .box:first-child{
-        flex:1.8
+        flex:1.65
     }
 
     #column4 .box:nth-child(2){
@@ -337,6 +341,10 @@
 
     #filterbar strong{
         margin-right: 32px
+    }
+
+    #filterbar p{
+        align-self: center
     }
 
     #latest h2{
@@ -441,7 +449,7 @@
         align-self: baseline
     }
 
-    .desktop-only{
+    .no-mobile{
         display:none;
     }
 
@@ -519,7 +527,7 @@
     }
 
     #stays-list .box{
-        min-width: 200px;
+        min-width: 205px;
         max-width: 33%;
     }
 
@@ -533,7 +541,7 @@
     }
 
     #activities-list{
-        width:87%;
+        width:95%;
         margin:auto;
         justify-content: space-around;
         flex-flow: wrap row;
@@ -590,3 +598,25 @@
         flex:1.2
     }
 }   
+
+@media all and (max-width: 1024px){
+    #latest{
+        margin-right:0px
+    }
+
+    #stays-list{
+        margin-left:0px
+    }
+
+    .indent{
+        margin-left:16px
+    }
+
+    .no-desktop{
+        display:initial
+    }
+
+    .desktop-only{
+        display:none
+    }
+}
