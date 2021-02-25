@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @media all{
     body{
         max-width: 1340px;
@@ -237,6 +239,7 @@
         flex-direction: row;
         margin-left: 12px;
         margin-bottom: 6px;
+        font-size: 0.95em
     }
 
     .four-stars i:nth-child(5),.three-stars i:nth-child(5),.three-stars i:nth-child(4){
@@ -341,6 +344,14 @@
 
     #filterbar p{
         align-self: center
+    }
+
+    form p{
+        display:flex
+    }
+
+    form i{
+        align-self:center
     }
 }
 
