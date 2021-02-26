@@ -283,7 +283,6 @@
 
     strong{
         font-size: 1.05em;
-        background: none;
     }
 
     h2 i{
@@ -319,7 +318,7 @@
         height: 475px;
     }
 
-    #activities a{
+    #activities a,#stays-list a{
         display:flex;
         flex-flow:column nowrap;
         justify-content: flex-end;
@@ -380,7 +379,7 @@
     }
 }
 
-@media all and (max-width: 599px){    
+@media all and (max-width: 600px){    
     header, footer, #stays-list, #activities-list{
         flex-direction: column;
     }
@@ -534,8 +533,8 @@
         flex:50%;
     }
 
-    p, li, i, strong{
-        font-size:1.2em
+    p, li, i{
+        font-size:1.25em
     }
 
     .box i{
