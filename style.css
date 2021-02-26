@@ -392,12 +392,7 @@
         margin-bottom: 24px
     }
 
-    #activities-list .box a{
-        width: 100%;
-    }
-
     #activities-list img{
-        width: 100%;
         max-width:none;
         flex:none;
         max-height: 200px;
@@ -455,7 +450,7 @@
         justify-content: space-between;
     }
 
-    nav{
+    nav, #activities-list .box a, #activities-list img{
         width:100%
     }
 
@@ -571,12 +566,11 @@
         flex-direction: column-reverse;
     }
 
-    #filterbar{
+    #filterbar, #filters{
         flex-wrap: wrap;
     }
     
     #filters{
-        flex-wrap: wrap;
         justify-content: left;
     }
     
