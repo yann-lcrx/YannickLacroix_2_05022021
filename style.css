@@ -59,7 +59,6 @@
     }
 
     header div{
-        display: flex;
         flex-flow: row nowrap;
     }
 
@@ -123,7 +122,7 @@
 
     #popular-list img{
         width: 140px;
-        height: 140px
+        min-height: 140px
     }
 
     nav li:hover{
@@ -174,13 +173,8 @@
     }
 
     .stay-info{
-        display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-    }
-
-    #popular-list a{
-        display:flex;
     }
 
     a{
@@ -191,7 +185,7 @@
         color: black
     }
 
-    #filters, footer, header, #stays, #popular-list, #stays-list, #activities-list, #filterbar{
+    #filters, footer, header, #stays, #popular-list, #stays-list, #activities-list, #activities-list .box, #filterbar, #popular-list a,.stay-info, .four-stars, .three-stars, .five-stars, #column1, #column2, #column3, #column4, form p, #infobar, #headsection,#activities a,#stays-list a, header div{
         display:flex;
     }
 
@@ -253,7 +247,6 @@
     }
 
     .four-stars, .three-stars, .five-stars{
-        display:flex;
         flex-wrap: nowrap;
         flex-direction: row;
         margin-left: 12px;
@@ -308,18 +301,15 @@
         margin-right: 20px;
         overflow: hidden;
         padding-bottom: 6px;
-        display: flex;
         flex:1
     }
 
     #column1, #column2, #column3, #column4{
-        display: flex;
         flex-flow: nowrap column;
         height: 475px;
     }
 
     #activities a,#stays-list a{
-        display:flex;
         flex-flow:column nowrap;
         justify-content: flex-end;
     }
@@ -333,7 +323,6 @@
     }
 
     #headsection{
-        display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
     }
@@ -342,10 +331,6 @@
         align-self: center;
         color: black;
         font-size: 1.3em;
-    }
-
-    #infobar{
-        display: flex;
     }
 
     ul{
@@ -364,10 +349,6 @@
 
     #filterbar p{
         align-self: center
-    }
-
-    form p{
-        display:flex
     }
 
     form i{
@@ -518,7 +499,7 @@
     }
 
     #popular-list img{
-        width: 25%;
+        width: 30%;
         height: 125px;
     }
 
