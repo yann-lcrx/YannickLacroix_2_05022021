@@ -79,7 +79,7 @@
     #latest{
         flex:70%;
         margin-right: 64px;
-        margin-left:48px
+        margin-left:16px
     }
 
     section img{
@@ -165,7 +165,7 @@
         margin-right: 24px;
         flex: 1;
         overflow: hidden;
-        min-width: 162px;
+        min-width: 175px;
     }
 
     #popular-list .box{
