@@ -122,7 +122,7 @@
     }
 
     #popular-list img{
-        width: 150px;
+        width: 140px;
         height: 140px
     }
 
@@ -392,10 +392,6 @@
         margin-bottom: 12px;
     }
 
-    #popular-list img{
-        width: 40%;
-    }
-
     #stays-list .box{
         max-width:none;
         margin-right: 0px;
@@ -500,6 +496,11 @@
     header div p{
         height: 0px
     }
+
+    aside{
+        margin-left:0px;
+        margin-right:0px
+    }
 }
 
 @media all and (min-width:600px) and (max-width: 1024px){
@@ -566,7 +567,8 @@
     }
 
     aside{
-        max-width:700px
+        width:80%;
+        margin:auto
     }
 }   
 
@@ -575,7 +577,7 @@
         width: 95%;
     }
 
-    #latest, aside{
+    #latest{
         margin-left:0px;
         margin-right:0px
     }
