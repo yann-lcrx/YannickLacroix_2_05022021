@@ -2,9 +2,12 @@
 
 @media all{
     body{
+        font-family: 'Raleway', Arial, serif;
+    }
+
+    .width-limit{
         max-width: 1280px;
         margin: auto;
-        font-family: 'Raleway', Arial, serif;
     }
 
     .mobile-only{
@@ -31,22 +34,12 @@
         font-size:1.35em
     }
 
-    header{
+    header, #search, #stays, #activities{
         margin-bottom: 24px;
     }
 
-    section{
-        margin-bottom: 64px
-    }
-
     footer{
-        justify-content: flex-start;
-        margin-left: 16px;
-    }
-
-    footer div{
-        flex: 33%;
-        text-align: left
+        justify-content: space-around;
     }
 
     footer a:hover{
@@ -78,20 +71,23 @@
 
     #latest{
         flex:70%;
-        margin-right: 64px;
-        margin-left:16px
+        margin-right: 32px;
+    }
+
+    #latest, aside{
+        padding: 32px;
     }
 
     section img{
         border-radius: 24px 24px 0px 0px;
     }
 
-    aside img{
-        border-radius: 24px 0px 0px 24px;
-    }
-
     #stays{
         flex-wrap: nowrap;
+    }
+
+    #stays .box:nth-child(3), #stays .box:nth-child(6){
+        margin-right: 0px;
     }
 
     aside{
@@ -116,13 +112,18 @@
 
     #stays-list img{
         min-width: 175px;
-        height: 125px;
+        height: 115px;
         width: 100%;
     }
 
     #popular-list img{
-        width: 140px;
-        min-height: 140px
+        width: 135px;
+        min-height: 135px;
+        border-radius: 24px 0px 0px 24px;
+    }
+
+    #popular-list .stay-info{
+        margin-left:6px
     }
 
     nav li:hover{
@@ -158,7 +159,12 @@
         border-radius: 24px;
         margin-bottom: 32px;
         border-bottom: 1px solid lightgray;
-        padding: 7px
+        padding: 7px;
+        background-color: white;
+    }
+
+    #latest, aside{
+        border-radius: 32px;
     }
 
     #stays-list .box{
@@ -185,7 +191,7 @@
         color: black
     }
 
-    #filters, footer, header, #stays, #popular-list, #stays-list, #activities-list, #activities-list .box, #filterbar, #popular-list a,.stay-info, .four-stars, .three-stars, .five-stars, #column1, #column2, #column3, #column4, form p, #infobar, #headsection,#activities a,#stays-list a, header div{
+    #filters, footer .width-limit, header, #stays, #popular-list, #stays-list, #activities-list, #activities-list .box, #filterbar, #popular-list a,.stay-info, .four-stars, .three-stars, .five-stars, #column1, #column2, #column3, #column4, form p, #infobar, #headsection,#activities a,#stays-list a, header div{
         display:flex;
     }
 
@@ -341,6 +347,14 @@
 
     footer li{
         padding-bottom: 12px;
+    }
+
+    footer .width-limit{
+        flex-flow: row nowrap;
+    }
+
+    footer .width-limit div{
+        flex:1
     }
 
     #filterbar strong{
