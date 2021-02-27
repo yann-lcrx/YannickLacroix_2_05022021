@@ -73,7 +73,7 @@
     }
 
     #latest, aside, footer, form p > i{
-        background-color: red;
+        background-color: #F2F2F2;
     }
 
     #latest{
@@ -191,7 +191,7 @@
         color: black
     }
 
-    #filters, footer .width-limit, header, #stays, #popular-list, #stays-list, #activities-list, #activities-list .box, #filterbar, #popular-list a,.stay-info, .four-stars, .three-stars, .five-stars, #column1, #column2, #column3, #column4, form p, #infobar, #headsection,#activities a,#stays-list a, header div{
+    #filters, footer .width-limit, header, #stays, #popular-list, #stays-list, #activities-list, #activities-list .box, #filterbar, #popular-list a,.stay-info, .four-stars, .three-stars, .five-stars, .column, form p, #infobar, #headsection,#activities a,#stays-list a, header div{
         display:flex;
     }
 
@@ -223,15 +223,15 @@
     }
 
     #search input, #search button{
-        padding: 16px;
+        padding: 14px;
         font-weight: bold;
         border-right:none;
         border-left:none
     }
 
     #search input{
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
     }
 
     #filters i{
@@ -302,6 +302,7 @@
 
     #activities-list img{
         width: 100%;
+        height: 100%;
         flex: 22;
     }
 
@@ -312,9 +313,10 @@
         flex:1
     }
 
-    #column1, #column2, #column3, #column4{
+    .column{
         flex-flow: nowrap column;
         height: 475px;
+        flex: 1
     }
 
     #activities a,#stays-list a{
@@ -322,11 +324,11 @@
         justify-content: flex-end;
     }
 
-    #column2 .box:first-child{
+    .column:nth-child(2) .box:first-child{
         flex:1.65
     }
 
-    #column4 .box:nth-child(2){
+    .column:nth-child(4) .box:nth-child(2){
         flex:1.3
     }
 
@@ -367,7 +369,7 @@
         align-self: center
     }
     
-    #column4 .box{
+    .column:nth-child(4) .box{
         margin-right:0px
     }
 
@@ -418,10 +420,6 @@
         margin-bottom: 10px;
     }
 
-    #column1,#column2,#column3,#column4{
-        flex:1
-    }
-
     #activities-list .box{
         margin-right:0px;
         max-height:175px;
@@ -429,7 +427,6 @@
     }
 
     #activities-list img{
-        max-width:none;
         flex:none;
         max-height: 200px;
     }
@@ -487,7 +484,7 @@
         justify-content: space-between;
     }
 
-    nav, #activities-list .box a, #activities-list img{
+    nav, #activities-list .box a{
         width:100%
     }
 
@@ -495,7 +492,7 @@
         flex:1;
         display: inline-block;
         text-align: center;
-        border-bottom: 3px solid red
+        border-bottom: 3px solid #F2F2F2
     }
 
     nav li:hover{
@@ -548,9 +545,13 @@
         flex-flow: wrap row;
     }
 
-    #column1, #column3, #column2, #column4{
+    .column{
         max-width: 50%;
         flex:50%;
+    }
+
+    .column:nth-child(2) .box{
+        margin-right:0px
     }
 
     p, li{
@@ -577,11 +578,11 @@
         margin-left:0px
     }
 
-    #column2 .box:first-child{
+    .column:nth-child(2) .box:first-child{
         flex:1.4
     }
 
-    #column4 .box:nth-child(2){
+    .column:nth-child(4) .box:nth-child(2){
         flex:1.2
     }
 
