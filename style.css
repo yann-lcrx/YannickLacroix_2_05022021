@@ -382,13 +382,14 @@
         height:25%;
     }
 
-    #filters li{
-        margin-bottom: 12px;
-    }
-
     #stays-list .box{
         max-width:none;
         margin-right: 0px;
+    }
+
+    #mostpopular{
+        padding:0px;
+        border-radius: 0px 0px 0px 0px;
     }
 
     .box br{
@@ -451,7 +452,7 @@
 
     #search button{
         padding: 6px;
-        border-radius: 16px
+        border-radius: 24px
     }
 
     form{
@@ -571,6 +572,7 @@
         margin-left:0px;
         margin-right:0px;
         background-color: white;
+        padding:0px
     }
 
     .desktop-only{
@@ -591,5 +593,9 @@
 
     section, aside{
         margin-bottom:32px
+    }
+
+    #filters li{
+        margin-bottom: 12px;
     }
 }
