@@ -73,7 +73,7 @@
     }
 
     #latest, aside, footer, form p > i{
-        background-color: #F2F2F2;
+        background-color: red;
     }
 
     #latest{
@@ -219,15 +219,19 @@
         background-color: #0065FC;
         color: white;
         border-radius: 0px 16px 16px 0px;
+        border: none
     }
 
     #search input, #search button{
         padding: 16px;
         font-weight: bold;
-        border-top: 1px solid #F2F2F2;
-        border-bottom: 1px solid #F2F2F2;
         border-right:none;
         border-left:none
+    }
+
+    #search input{
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
     }
 
     #filters i{
@@ -260,10 +264,6 @@
         flex-direction: row;
         margin-left: 12px;
         margin-bottom: 6px
-    }
-
-    .box i{
-        font-size: 0.85em
     }
 
     .four-stars i:nth-child(5),.three-stars i:nth-child(5),.three-stars i:nth-child(4){
@@ -302,7 +302,6 @@
 
     #activities-list img{
         width: 100%;
-        max-width: 400px;
         flex: 22;
     }
 
@@ -373,12 +372,13 @@
     }
 
     .stars i{
-        margin-right: 1px    
+        margin-right: 1px;
+        font-size: 0.9em    
     }
 }
 
-@media all and (max-width: 600px){    
-    header, footer .width-limit, #stays-list, #activities-list{
+@media all and (max-width: 599px){    
+    header, #stays-list, #activities-list{
         flex-direction: column;
     }
 
@@ -464,18 +464,18 @@
         flex-flow: row nowrap;
     }
 
-    form i{
+    form p > i{
         align-self:center;
-        flex: 0.14
     }
 
-    form input{
-        flex:1
+    #search input{
+        flex:1;
+        padding: 8px
     }
 
     #search button{
-        padding: 6px;
-        border-radius: 24px
+        padding: 0px;
+        border-radius: 16px
     }
 
     form{
@@ -495,7 +495,7 @@
         flex:1;
         display: inline-block;
         text-align: center;
-        border-bottom: 3px solid #F2F2F2
+        border-bottom: 3px solid red
     }
 
     nav li:hover{
@@ -518,6 +518,11 @@
 }
 
 @media all and (min-width:600px) and (max-width: 1024px){
+    #stays{
+        max-width: 90%;
+        margin:auto
+    }
+    
     .tablet-only{
         display: initial;
     }
@@ -527,7 +532,7 @@
     }
 
     #stays-list .box{
-        min-width: 210px;
+        min-width: 25%;
         max-width: 33%;
     }
 
@@ -548,20 +553,20 @@
         flex:50%;
     }
 
-    p, li, i{
-        font-size:1.25em
+    p, li{
+        font-size:1.1em
     }
 
     .box i{
-        font-size:1.05em
+        font-size:1em
     }
 
     h3{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
-    h1,h2{
-        font-size:1.65em;
+    h1,h2, #headsection i{
+        font-size:1.55em;
     }
 
     .stay-info{
@@ -584,6 +589,11 @@
         width:80%;
         margin:auto
     }
+
+    form p > i{
+        font-size:1.05em;
+        padding:21px
+    }
 }   
 
 @media all and (max-width: 1024px){
@@ -605,6 +615,10 @@
     
     #stays{
         flex-direction: column-reverse;
+    }
+
+    footer .width-limit{
+        flex-direction: column;
     }
 
     #filterbar, #filters{
