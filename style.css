@@ -371,6 +371,10 @@
     #column4 .box{
         margin-right:0px
     }
+
+    .stars i{
+        margin-right: 1px    
+    }
 }
 
 @media all and (max-width: 600px){    
@@ -434,8 +438,9 @@
         border-radius: 64px;
     }
 
-    #infobar i{
-        align-self: baseline
+    #infobar i, .stars i{
+        align-self: baseline;
+        font-size: 0.7em
     }
 
     #infobar p{
@@ -490,10 +495,11 @@
         flex:1;
         display: inline-block;
         text-align: center;
+        border-bottom: 3px solid #F2F2F2
     }
 
     nav li:hover{
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         border-top: none
     }
 
