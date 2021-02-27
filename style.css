@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media all{
-    body, .width-limit{
+    body, .width-limit, #stays{
         margin:auto
     }
 
@@ -9,7 +9,7 @@
         font-family: 'Raleway', Arial, serif;
     }
 
-    .width-limit{
+    .width-limit, #stays{
         max-width: 1280px
     }
 
@@ -376,6 +376,24 @@
 @media all and (max-width: 600px){    
     header, footer .width-limit, #stays-list, #activities-list{
         flex-direction: column;
+    }
+
+    #stays{
+        max-width: 100%;
+        margin: auto
+    }
+
+    #popular-list, #headsection, #stays-list,.indent{
+        margin: auto
+    }
+
+    #popular-list, #headsection, #stays-list, #latest h2,.indent{
+        max-width: 90%;
+    }
+
+    #latest h2{
+        margin-left:auto;
+        margin-right:auto
     }
 
     header img{
