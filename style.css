@@ -113,6 +113,19 @@
         margin-right:15px
     }
 
+    #mostpopular .stay-info{
+        margin-left: 12px;
+    }
+
+    #stays-list a{
+        height:100%;
+        justify-content: flex-start;
+    }
+
+    #stays-list .stay-info{
+        flex:1
+    }
+
     #stays-list img{
         height: 115px;
         width: 100%;
@@ -529,8 +542,7 @@
     }
 
     #stays-list .box{
-        min-width: 25%;
-        max-width: 33%;
+        min-width: 25%
     }
 
     #popular-list img{
@@ -568,10 +580,6 @@
 
     h1,h2, #headsection i{
         font-size:1.55em;
-    }
-
-    .stay-info{
-        margin-left: 12px;
     }
 
     #latest h2{
