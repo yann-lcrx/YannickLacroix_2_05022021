@@ -45,16 +45,15 @@
         justify-content: space-around;
     }
 
-    footer a:hover{
+    footer a:hover, header div p a,nav a:hover,i,nav li:nth-child(3){
         color: #0065FC;
     }
 
     header{
-        flex-flow: row nowrap;
         justify-content: space-between;
     }
 
-    header div{
+    header div, header{
         flex-flow: row nowrap;
     }
 
@@ -62,10 +61,6 @@
         align-self: center;
         padding: 8px;
         font-weight:bold;
-    }
-
-    header div p a{
-        color: #0065FC;
     }
 
     #latest, aside, footer{
@@ -100,6 +95,9 @@
 
     ul{
         list-style-type: none;
+        padding-left: 0px;
+        margin-left:0px;
+        text-indent:0px
     }
 
     nav ul{
@@ -147,11 +145,6 @@
 
     nav li:nth-child(3){
         font-weight: bold;
-        color: #0065FC;
-    }
-
-    nav a:hover,i{
-        color: #0065FC;
     }
 
     #stays-list{
@@ -218,7 +211,7 @@
         text-align: center;
     }
 
-    #filters li:hover{     
+    #filters li:hover, #search button{     
         background-color: #0065FC;
         color: white;
     }
@@ -229,8 +222,6 @@
     }
 
     #search button{
-        background-color: #0065FC;
-        color: white;
         border-radius: 0px 16px 16px 0px;
         border: none
     }
@@ -356,12 +347,6 @@
         font-size: 1.3em;
     }
 
-    ul{
-        padding-left: 0px;
-        margin-left:0px;
-        text-indent:0px
-    }
-
     footer li{
         padding-bottom: 12px;
     }
@@ -398,11 +383,10 @@
     }
 
     #stays{
-        max-width: 100%;
-        margin: auto
+        max-width: 100%
     }
 
-    #popular-list, #headsection, #stays-list,.indent{
+    #popular-list, #headsection, #stays-list,.indent, #stays{
         margin: auto
     }
 
